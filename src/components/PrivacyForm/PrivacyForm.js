@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import { Form, Formik } from "formik";
 import Checkbox from "../Checkbox";
 import { submitPrivacy } from "../../slices/privacySlice";
+import './privacyForm.css';
 
 const PrivacyForm = () => {
   const dispatch = useDispatch();
@@ -33,7 +34,7 @@ const PrivacyForm = () => {
           name="otherEmail"
           type="checkbox"
         />
-        <button type="submit" data-testid="submit-button">Submit</button>
+        <button type="submit" className="submit-button" data-testid="submit-button">Submit</button>
       </Form>
     </Formik>
   )

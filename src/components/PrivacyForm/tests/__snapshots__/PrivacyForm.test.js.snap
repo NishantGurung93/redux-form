@@ -6,7 +6,7 @@ exports[`Header component should render the component 1`] = `
     action="#"
   >
     <div
-      class="trayEmail-checkbox"
+      class="checkbox-wrapper"
     >
       <input
         data-testid="trayEmail-checkbox"
@@ -22,7 +22,7 @@ exports[`Header component should render the component 1`] = `
       </label>
     </div>
     <div
-      class="otherEmail-checkbox"
+      class="checkbox-wrapper"
     >
       <input
         data-testid="otherEmail-checkbox"
@@ -38,6 +38,7 @@ exports[`Header component should render the component 1`] = `
       </label>
     </div>
     <button
+      class="submit-button"
       data-testid="submit-button"
       type="submit"
     >
