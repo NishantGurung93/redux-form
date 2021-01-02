@@ -10,12 +10,12 @@ const App = () => {
   return (
     <Router>
       <Header />
-      <Switch>
-        <div className="app">
+      <div className="app">
+        <Switch>
           <Route exact path="/">
             <Redirect to="/details" />
           </Route>
-          <Route exact path="/details">
+          <Route path="/details">
             <UserForm />
           </Route>
           <Route path="/privacy">
@@ -24,8 +24,8 @@ const App = () => {
           <Route path="/confirmation">
             <Confirmation />
           </Route>
-        </div>
-      </Switch>
+        </Switch>
+      </div>
     </Router>
   );
 }
