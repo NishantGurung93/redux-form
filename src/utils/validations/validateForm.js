@@ -1,3 +1,5 @@
+// Validating the entire form a submit attempt
+// The values is the model of the Formik form which will be validated and returned as an errors object
 export const validateForm = (values) => {
   const errors = {};
   

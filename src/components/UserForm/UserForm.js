@@ -10,6 +10,7 @@ const UserForm = () => {
   const dispatch = useDispatch();
   const history = useHistory();
 
+  // Initial values for the inputs in the form. Ideally we should be using the redux default values but there was nothing to gain from doing so for this product's requirements
   const initialValues = {
     name: '',
     role: '',
@@ -22,6 +23,7 @@ const UserForm = () => {
       initialValues={initialValues}
       validate={validateForm}
       onSubmit={(values) => {
+        // After dispatching the action to the redux, we navigate to the next page of the application
         dispatch(submitDetails(values));
         history.push('/privacy');
       }}

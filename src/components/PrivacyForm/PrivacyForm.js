@@ -9,6 +9,7 @@ const PrivacyForm = () => {
   const dispatch = useDispatch();
   const history = useHistory();
 
+  // Initial values for the inputs in the form. Ideally we should be using the redux default values but there was nothing to gain from doing so for this product's requirements
   const initialValues = {
     trayEmail: '',
     otherEmail: '',
@@ -18,6 +19,7 @@ const PrivacyForm = () => {
     <Formik
       initialValues={initialValues}
       onSubmit={(values) => {
+        // After dispatching the action to the redux, we navigate to the next page of the application
         dispatch(submitPrivacy(values));
         history.push('/confirmation');
       }}

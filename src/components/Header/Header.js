@@ -2,6 +2,7 @@ import { useRouteMatch } from "react-router-dom";
 import './header.css';
 
 const Header = () => {
+  // Determining the current path of the application to decide which step the user is on
   const userPage = useRouteMatch("/details");
   const privacyPage = useRouteMatch("/privacy");
   const confirmationPage = useRouteMatch("/confirmation");

@@ -7,6 +7,8 @@ import Header from '../Header/Header';
 import './app.css';
 
 const App = () => {
+  // Using react router to determine what component to render based on URL
+  // Header is always rendered
   return (
     <Router>
       <Header />

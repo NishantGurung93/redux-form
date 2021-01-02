@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+// This powerful function lets us set the initial state, reducers and actions in a clean manner
 export const userSlice = createSlice({
   name: 'user',
   initialState: {
@@ -25,6 +26,8 @@ export const userSlice = createSlice({
   },
 });
 
+// Exporting the action
 export const { submitDetails } = userSlice.actions;
 
+// Exporting the reducer
 export default userSlice.reducer;

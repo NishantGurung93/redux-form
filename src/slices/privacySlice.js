@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+// This powerful function lets us set the initial state, reducers and actions in a clean manner
 export const privacySlice = createSlice({
   name: 'privacy',
   initialState: {
@@ -19,6 +20,8 @@ export const privacySlice = createSlice({
   },
 });
 
+// Exporting the action
 export const { submitPrivacy } = privacySlice.actions;
 
+// Exporting the reducer
 export default privacySlice.reducer;
