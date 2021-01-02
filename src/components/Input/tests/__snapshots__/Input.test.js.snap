@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component should render the component 1`] = `
+<div>
+  <div
+    class="test-input"
+  >
+    <label
+      for="test"
+    >
+      Test label
+    </label>
+    <input
+      id="test"
+      name="test"
+      placeholder="Test placeholder"
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;
