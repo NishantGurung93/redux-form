@@ -3,7 +3,7 @@
 exports[`Input component should render the component 1`] = `
 <div>
   <div
-    class="test-input"
+    class="input-wrapper"
   >
     <label
       for="test"
@@ -11,6 +11,7 @@ exports[`Input component should render the component 1`] = `
       Test label:
     </label>
     <input
+      data-testid="test-input"
       id="test"
       name="test"
       placeholder="Test placeholder"

@@ -1,0 +1,22 @@
+.input-wrapper {
+  margin: 10px 0;
+}
+
+.input-wrapper label {
+  font-size: 1.125rem;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.input-wrapper span {
+  color: red;
+  position: relative;
+  display: inline-block;
+  margin-left: 5px;
+  top: 4px;
+}
+
+.input-wrapper input {
+  width: 99%;
+  border: 1px solid;
+}

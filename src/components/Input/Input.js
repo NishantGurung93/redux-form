@@ -1,12 +1,13 @@
 import { ErrorMessage, Field } from "formik";
 import { oneOf, string, bool } from 'prop-types';
+import './input.css';
 
 const Input = ({ label, name, placeholder, type, required }) => {
   return (
-    <div className={`${name}-input`}>
+    <div className='input-wrapper'>
       {
         required ?
-          <label htmlFor={name}>{`${label}:`}<span className="asterisk"> *</span></label>
+          <label htmlFor={name}>{`${label}:`}<span> *</span></label>
           :
           <label htmlFor={name}>{`${label}:`}</label>
       }
@@ -31,8 +32,7 @@ Input.propTypes = {
 };
 
 Input.defaultProps = {
-  type: 'text',
-  sessioncamhide: false,
+  type: 'text'
 };
 
 export default Input;
