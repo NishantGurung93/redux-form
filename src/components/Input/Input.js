@@ -12,6 +12,7 @@ const Input = ({ label, name, placeholder, type, required }) => {
       }
       <Field
         id={name}
+        data-testid={`${name}-input`}
         name={name}
         placeholder={placeholder}
         type={type}
