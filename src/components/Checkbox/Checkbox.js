@@ -1,9 +1,10 @@
 import { Field } from "formik";
 import { string } from 'prop-types';
+import './checkbox.css';
 
 const Checkbox = ({ label, name }) => {
   return (
-    <div className={`${name}-checkbox`}>
+    <div className={'checkbox-wrapper'}>
       <Field
         id={name}
         data-testid={`${name}-checkbox`}

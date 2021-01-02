@@ -3,7 +3,7 @@
 exports[`Input component should render the component 1`] = `
 <div>
   <div
-    class="test-checkbox"
+    class="checkbox-wrapper"
   >
     <input
       data-testid="test-checkbox"
