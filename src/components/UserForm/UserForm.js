@@ -1,8 +1,12 @@
 import { Form, Formik } from "formik";
+import { useDispatch } from "react-redux";
+import { submitDetails } from "../../slices/userSlice";
 import { validateForm } from "../../utils/validations";
 import Input from "../Input";
 
 const UserForm = () => {
+  const dispatch = useDispatch();
+
   const initialValues = {
     name: '',
     role: '',
@@ -15,7 +19,7 @@ const UserForm = () => {
       initialValues={initialValues}
       validate={validateForm}
       onSubmit={(values) => {
-        alert(JSON.stringify(values, null, 2));
+        dispatch(submitDetails(values));
       }}
     >
 
@@ -50,7 +54,7 @@ const UserForm = () => {
           type="password"
           required
         />
-        
+
         <button type="submit">Submit</button>
       </Form>
     </Formik>
