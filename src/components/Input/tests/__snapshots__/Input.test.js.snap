@@ -8,7 +8,7 @@ exports[`Input component should render the component 1`] = `
     <label
       for="test"
     >
-      Test label
+      Test label:
     </label>
     <input
       id="test"

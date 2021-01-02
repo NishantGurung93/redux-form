@@ -6,9 +6,9 @@ const Input = ({ label, name, placeholder, type, required }) => {
     <div className={`${name}-input`}>
       {
         required ?
-          <label htmlFor={name}>{label}<span className="asterisk"> *</span></label>
+          <label htmlFor={name}>{`${label}:`}<span className="asterisk"> *</span></label>
           :
-          <label htmlFor={name}>{label}</label>
+          <label htmlFor={name}>{`${label}:`}</label>
       }
       <Field
         id={name}
