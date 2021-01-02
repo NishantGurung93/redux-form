@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component should render the component 1`] = `
+<div>
+  <form
+    action="#"
+  >
+    <div
+      class="trayEmail-checkbox"
+    >
+      <input
+        data-testid="trayEmail-checkbox"
+        id="trayEmail"
+        name="trayEmail"
+        type="checkbox"
+        value=""
+      />
+      <label
+        for="trayEmail"
+      >
+        Receive updates about Tray.io product by email
+      </label>
+    </div>
+    <div
+      class="otherEmail-checkbox"
+    >
+      <input
+        data-testid="otherEmail-checkbox"
+        id="otherEmail"
+        name="otherEmail"
+        type="checkbox"
+        value=""
+      />
+      <label
+        for="otherEmail"
+      >
+        Receive communication by email for other products created by the Tray.io team
+      </label>
+    </div>
+    <button
+      data-testid="submit-button"
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+`;
