@@ -7,7 +7,7 @@
 [type="checkbox"]:not(:checked) + label,
 [type="checkbox"]:checked + label {
   position: relative;
-  padding-left: 1.95em;
+  padding-left: 1.95rem;
   cursor: pointer;
   line-height: 1.25rem;
 }
@@ -29,7 +29,7 @@
 [type="checkbox"]:checked + label:after {
   content: '\2713\0020';
   position: absolute;
-  top: .15em; left: .22em;
+  top: .15rem; left: .22rem;
   font-size: 1.25rem;
   line-height: 0.8;
   transition: all .2s;
