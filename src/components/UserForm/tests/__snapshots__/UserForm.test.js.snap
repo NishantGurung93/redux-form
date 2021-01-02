@@ -6,15 +6,13 @@ exports[`Header component should render the component 1`] = `
     action="#"
   >
     <div
-      class="name-input"
+      class="input-wrapper"
     >
       <label
         for="name"
       >
         Name:
-        <span
-          class="asterisk"
-        >
+        <span>
            *
         </span>
       </label>
@@ -28,7 +26,7 @@ exports[`Header component should render the component 1`] = `
       />
     </div>
     <div
-      class="role-input"
+      class="input-wrapper"
     >
       <label
         for="role"
@@ -45,15 +43,13 @@ exports[`Header component should render the component 1`] = `
       />
     </div>
     <div
-      class="email-input"
+      class="input-wrapper"
     >
       <label
         for="email"
       >
         Email:
-        <span
-          class="asterisk"
-        >
+        <span>
            *
         </span>
       </label>
@@ -67,15 +63,13 @@ exports[`Header component should render the component 1`] = `
       />
     </div>
     <div
-      class="password-input"
+      class="input-wrapper"
     >
       <label
         for="password"
       >
         Password:
-        <span
-          class="asterisk"
-        >
+        <span>
            *
         </span>
       </label>
@@ -83,12 +77,13 @@ exports[`Header component should render the component 1`] = `
         data-testid="password-input"
         id="password"
         name="password"
-        placeholder="Password"
+        placeholder="**********"
         type="password"
         value=""
       />
     </div>
     <button
+      class="submit-button"
       data-testid="submit-button"
       type="submit"
     >

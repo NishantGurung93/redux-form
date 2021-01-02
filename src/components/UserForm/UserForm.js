@@ -4,6 +4,7 @@ import { useHistory } from "react-router-dom";
 import { submitDetails } from "../../slices/userSlice";
 import { validateForm } from "../../utils/validations";
 import Input from "../Input";
+import './userForm.css';
 
 const UserForm = () => {
   const dispatch = useDispatch();
@@ -25,7 +26,6 @@ const UserForm = () => {
         history.push('/privacy');
       }}
     >
-
       <Form>
         <Input
           label="Name"
@@ -53,12 +53,12 @@ const UserForm = () => {
         <Input
           label="Password"
           name="password"
-          placeholder="Password"
+          placeholder="**********"
           type="password"
           required
         />
 
-        <button type="submit" data-testid="submit-button">Submit</button>
+        <button type="submit" className="submit-button" data-testid="submit-button">Submit</button>
       </Form>
     </Formik>
   )
