@@ -1,4 +1,6 @@
-import { Field, Form, Formik } from "formik";
+import { Form, Formik } from "formik";
+import { validateForm } from "../../utils/validations";
+import Input from "../Input";
 
 const UserForm = () => {
   const initialValues = {
@@ -11,32 +13,44 @@ const UserForm = () => {
   return (
     <Formik
       initialValues={initialValues}
-
+      validate={validateForm}
       onSubmit={(values) => {
         alert(JSON.stringify(values, null, 2));
       }}
     >
 
       <Form>
-        <label htmlFor="name">First Name</label>
-        <Field name="name" placeholder="Ash" />
+        <Input
+          label="First name"
+          name="name"
+          placeholder="Ash"
+          type="text"
+          required
+        />
 
-        <label htmlFor="role">Role</label>
-        <Field name="role" placeholder="Software engineer" />
+        <Input
+          label="Role"
+          name="role"
+          placeholder="Software engineer"
+          type="text"
+        />
 
-        <label htmlFor="email">Email</label>
-        <Field
+        <Input
+          label="Email"
           name="email"
           placeholder="ash@ketchum.com"
           type="email"
+          required
         />
 
-        <label htmlFor="password">Password</label>
-        <Field
+        <Input
+          label="Password"
           name="password"
-          placeholder="ash@ketchum.com"
+          placeholder="Password"
           type="password"
+          required
         />
+        
         <button type="submit">Submit</button>
       </Form>
     </Formik>
