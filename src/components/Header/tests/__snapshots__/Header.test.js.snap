@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component should render the component 1`] = `
+<div>
+  <div
+    class="header-wrapper"
+  >
+    <div
+      class=""
+    >
+       User
+    </div>
+    <div
+      class=""
+    >
+       Privacy
+    </div>
+    <div
+      class=""
+    >
+       Done
+    </div>
+  </div>
+</div>
+`;
