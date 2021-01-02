@@ -2,7 +2,7 @@ import { fireEvent, render } from "@testing-library/react";
 import { act } from "react-dom/test-utils";
 import { Provider } from "react-redux";
 import { Router } from "react-router-dom";
-import UserForm from "../UserForm";
+import UserForm from "..";
 
 const dispatch = jest.fn();
 const historyMock = { push: jest.fn(), location: {}, listen: jest.fn() };
