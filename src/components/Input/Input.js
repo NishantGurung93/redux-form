@@ -18,7 +18,7 @@ const Input = ({ label, name, placeholder, type, required }) => {
         placeholder={placeholder}
         type={type}
       />
-      <ErrorMessage className="error" name={name} />
+      <ErrorMessage name={name} render={message => <span className="error">{message}</span>} />
     </div>
   )
 };

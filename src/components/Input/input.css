@@ -1,5 +1,6 @@
 .input-wrapper {
   margin: 10px 0;
+  position : relative;
 }
 
 .input-wrapper label {
@@ -19,4 +20,12 @@
 .input-wrapper input {
   width: 99%;
   border: 1px solid;
+}
+
+.input-wrapper .error {
+  font-size: 0.675rem;
+  position: absolute;
+  margin-left: 0;
+  left: 0;
+  top: 55px;
 }

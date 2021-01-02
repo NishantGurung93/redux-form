@@ -29,7 +29,7 @@ describe('Header component', () => {
     expect(container).toMatchSnapshot();
   });
 
-  describe('valid form behaviour', () => {
+  describe('when submitting a valid form', () => {
     beforeEach(async () => {
       const { getByTestId } = renderComponent();
 
@@ -52,7 +52,7 @@ describe('Header component', () => {
       });
     });
 
-    it('should call submitDetails', async () => {
+    it('should call submitDetails', () => {
       expect(dispatch).toHaveBeenCalledWith({
         payload: {
           email: 'tom@hardy.com',
@@ -64,8 +64,28 @@ describe('Header component', () => {
       });
     });
 
-    it('should call useHistory hook with "/privacy"', async () => {
+    it('should call useHistory hook with "/privacy"', () => {
       expect(historyMock.push).toHaveBeenCalledWith('/privacy');
+    });
+  });
+
+  describe('when submitting an invalid form', () => {
+    beforeEach(async () => {
+      const { getByTestId } = renderComponent();
+
+      const submitButton = getByTestId('submit-button');
+
+      await act(async () => {
+        fireEvent.click(submitButton);
+      });
+    });
+
+    it('should not call submitDetails', () => {
+      expect(dispatch).not.toHaveBeenCalled();
+    });
+
+    it('should not call useHistory hook', () => {
+      expect(historyMock.push).not.toHaveBeenCalled();
     });
   });
 });
