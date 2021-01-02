@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component should render the component 1`] = `
+<div>
+  <div
+    class="test-checkbox"
+  >
+    <input
+      data-testid="test-checkbox"
+      id="test"
+      name="test"
+      type="checkbox"
+      value=""
+    />
+    <label
+      for="test"
+    >
+      Test label
+    </label>
+  </div>
+</div>
+`;
