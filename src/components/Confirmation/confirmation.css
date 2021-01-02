@@ -1,0 +1,11 @@
+.confirm-checkmark {
+  font-size: 4rem;
+  color: green;
+  text-align: center;
+}
+
+.confirm-message {
+  width: 100%;
+  color: green;
+  text-align: center;
+}
